@@ -1,0 +1,91 @@
+.labeled-field {
+  display: block;
+  width: 100%;
+
+  // Fancy styles for text:
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 17px;
+    line-height: 24px; /* 1.4 */
+    font-weight: 700;
+  }
+
+  // Custom field container:
+  &__object-container {
+    position: relative;
+  }
+
+  // General styles for fields:
+  &__object {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba( 68, 68, 68, 1);
+    border-color: #000;
+    border-style: solid;
+
+    &::placeholder {
+      color: rgba( 68, 68, 68, 0.3);
+    }
+  }
+
+  // Custom styles for input field:
+  &--type--input &__object {
+    padding: 15px 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-width: 2px;
+  }
+
+  // Custom styles for textarea:
+  &--type--textarea &__object {
+    min-height: 140px;
+    padding: 18px;
+    margin-top: 15px;
+    border-width: 2px;
+    resize: vertical;
+  }
+
+  // Color theme for text:
+  &---theme--highlighted &__text {
+    padding-top: 5px;
+    color: #63d1bb;
+
+    // Draw color line after highlighted text:
+    &::after {
+      content: '';
+      height: 1px;
+      margin-left: 25px;
+      flex-grow: 1;
+      background-color: #63d1bb;
+    }
+  }
+
+  // Set position of icon in input field:
+  &__icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #000000;
+    fill-opacity: 0.2;
+    pointer-events: none;
+  }
+
+  // Change input border color on component hover and focus:
+  &:hover &__object,
+  &:focus &__object {
+    border-color: #62d1ba;
+  }
+
+  // Change icon fill color on component hover and focus:
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: #62d1ba;
+    fill-opacity: 1;
+  }
+}
