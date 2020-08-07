@@ -1,0 +1,84 @@
+.labeled-indicator {
+  display: flex;
+  align-items: center;
+
+  // Input and custom input container:
+  &__indicator {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  // Hide the input itself:
+  &__object {
+    position: absolute;
+    left: -99999px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
+  // Draw the custom object:
+  &__custom-object {
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444;
+  }
+
+  // Fancy styles for text:
+  &__text {
+    font-size: 17px;
+    line-height: 24px; /* 1.4 */
+    font-weight: 700;
+  }
+
+  // Radiogroup type, specific styles:
+  &--type--radio &__custom-object {
+    border-radius: 50%;
+
+    // Draw circle inside custom radio for checked state:
+    &::before {
+      content: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background-color: #62d1ba;
+      border-radius: 50%;
+    }
+  }
+
+  // Show filling circle in radio when it's checked:
+  &--type--radio
+  &__object:checked + &__custom-object::before {
+    content: '';
+  }
+
+  // Show filling checkmark in checkbox when it's checked:
+  &--type--checkbox
+  &__object:checked + &__custom-object {
+    background-image: url("../images/tick-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  // Change custom radio border color on component hover and focus:
+  &:hover &__custom-object,
+  &:focus &__custom-object {
+    border-color: #62d1ba;
+  }
+
+  // Change custom radio border color on component click:
+  &:active &__custom-object {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  // Make offset between text and indicator:
+  &__indicator + &__text {
+    margin-left: 22px;
+  }
+}
