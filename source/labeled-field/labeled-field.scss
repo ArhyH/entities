@@ -7,9 +7,9 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    font-size: 17px;
-    line-height: 24px; /* 1.4 */
-    font-weight: 700;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
   }
 
   // Custom field container:
@@ -21,39 +21,39 @@
   &__object {
     box-sizing: border-box;
     width: 100%;
-    font-size: 17px;
-    line-height: 18px;
-    color: rgba( 68, 68, 68, 1);
-    border-color: #000;
-    border-style: solid;
+    font-size: ;
+    line-height: ;
+    color: ;
+    border-color: ;
+    border-style: ;
 
     &::placeholder {
-      color: rgba( 68, 68, 68, 0.3);
+      color: ;
     }
   }
 
   // Custom styles for input field:
   &--type--input &__object {
-    padding: 15px 0;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom-width: 2px;
+    padding: ;
+    border-top: ;
+    border-right: ;
+    border-left: ;
+    border-bottom-width: ;
   }
 
   // Custom styles for textarea:
   &--type--textarea &__object {
-    min-height: 140px;
-    padding: 18px;
-    margin-top: 15px;
-    border-width: 2px;
-    resize: vertical;
+    min-height: ;
+    padding: ;
+    margin-top: ;
+    border-width: ;
+    resize: ;
   }
 
   // Color theme for text:
   &---theme--highlighted &__text {
-    padding-top: 5px;
-    color: #63d1bb;
+    padding-top: ;
+    color: ;
 
     // Draw color line after highlighted text:
     &::after {
@@ -61,7 +61,7 @@
       height: 1px;
       margin-left: 25px;
       flex-grow: 1;
-      background-color: #63d1bb;
+      background-color: ;
     }
   }
 
@@ -71,7 +71,7 @@
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    fill: #000000;
+    fill: ;
     fill-opacity: 0.2;
     pointer-events: none;
   }
@@ -79,13 +79,13 @@
   // Change input border color on component hover and focus:
   &:hover &__object,
   &:focus &__object {
-    border-color: #62d1ba;
+    border-color: ;
   }
 
   // Change icon fill color on component hover and focus:
   &:hover &__icon,
   &:focus &__icon {
-    fill: #62d1ba;
-    fill-opacity: 1;
+    fill: ;
+    fill-opacity: ;
   }
 }
