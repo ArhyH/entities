@@ -22,16 +22,16 @@
   &__custom-object {
     display: block;
     box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #444;
+    width: ;
+    height: ;
+    border: ;
   }
 
   // Fancy styles for text:
   &__text {
-    font-size: 17px;
-    line-height: 24px; /* 1.4 */
-    font-weight: 700;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
   }
 
   // Radiogroup type, specific styles:
@@ -45,9 +45,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 16px;
-      height: 16px;
-      background-color: #62d1ba;
+      width: ;
+      height: ;
+      background-color: ;
       border-radius: 50%;
     }
   }
@@ -61,7 +61,7 @@
   // Show filling checkmark in checkbox when it's checked:
   &--type--checkbox
   &__object:checked + &__custom-object {
-    background-image: url("../images/tick-mobile.svg");
+    background-image: url("___");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -69,16 +69,16 @@
   // Change custom radio border color on component hover and focus:
   &:hover &__custom-object,
   &:focus &__custom-object {
-    border-color: #62d1ba;
+    border-color: ;
   }
 
   // Change custom radio border color on component click:
   &:active &__custom-object {
-    border-color: rgba(68, 68, 68, 0.3);
+    border-color: ;
   }
 
   // Make offset between text and indicator:
   &__indicator + &__text {
-    margin-left: 22px;
+    margin-left: ;
   }
 }
