@@ -1,0 +1,58 @@
+.toggle-menu {
+  display: none;
+
+  // Show block when class added:
+  &.is-opened {
+    display: block;
+    background-color: ;
+  }
+
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+    padding: ;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: ;
+    font-weight: ;
+    line-height: ;
+    color: ;
+
+    &:hover,
+    &:focus {
+      color: ;
+    }
+
+    &:active {
+      color: ;
+    }
+  }
+
+  &__text {
+    /////
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    fill: ;
+  }
+
+  // Change icon fill color on link hover and focus
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: ;
+  }
+
+  // Change icon fill opacity on link click:
+  &__link:active &__icon {
+    fill-opacity: ;
+  }
+}
+
