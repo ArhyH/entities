@@ -28,6 +28,7 @@ PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 # Front-end related stuff
 # -------------------------
 alias hi='open -a "Visual Studio Code" .'
+alias hey='open -a "Zeplin" .'
 alias init-project='git clone https://github.com/nicolahorbach/init-project.git'
 
 function magic {
