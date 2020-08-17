@@ -2,6 +2,7 @@
 #--------------------------
 
 alias hi='open -a "Visual Studio Code" .'
+alias hey='open -a "Zeplin" .'
 alias init-project='git clone https://github.com/nicolahorbach/init-project.git'
 
 function magic {
