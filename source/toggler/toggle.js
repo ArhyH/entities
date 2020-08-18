@@ -2,17 +2,17 @@
 // Normal Toggler:
 // --------------
 
-var Navigation = document.querySelector('.navigation-list');
-var Toggle = document.querySelector('.toggle');
+const navigation = document.querySelector('.navigation-list');
+const toggle = document.querySelector('.toggle');
 
 changeMenuVisibility();
 
 function changeMenuVisibility () {
-  Navigation.classList.toggle('is-opened');
-  Toggle.classList.toggle('is-toggled');
+  navigation.classList.toggle('is-opened');
+  toggle.classList.toggle('is-toggled');
 }
 
-Toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function() {
   changeMenuVisibility();
 });
 
@@ -20,18 +20,18 @@ Toggle.addEventListener('click', function() {
 // Toggler for all class elements:
 // -------------------------------
 
-var Navigation = document.querySelectorAll('.navigation-list');
-var Toggle = document.querySelector('.toggle');
+const navigation = document.querySelectorAll('.navigation-list');
+const toggle = document.querySelector('.toggle');
 
 changeMenuVisibility();
 
 function changeMenuVisibility () {
-  Navigation.forEach(function(element) {
+  navigation.forEach(function(element) {
       element.classList.toggle('is-opened');
     });
-  Toggle.classList.toggle('is-toggled');
+  toggle.classList.toggle('is-toggled');
 }
 
-Toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function() {
   changeMenuVisibility();
 });
