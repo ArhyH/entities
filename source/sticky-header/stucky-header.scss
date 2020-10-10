@@ -1,0 +1,11 @@
+.page-header {
+
+  &.sticky-position {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    height: fit-content;
+  }
+ }
