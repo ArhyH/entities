@@ -1,0 +1,12 @@
+.modal-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 43.75%;
+  min-width: 500px;
+  z-index: 4;
+
+  &.is-hidden {
+    display: none;
+  }
+}
