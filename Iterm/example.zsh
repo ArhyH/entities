@@ -17,26 +17,29 @@ alias ~='cd ~'
 alias c='clear'
 alias f='open -a Finder ./' 
 alias new='open -a Terminal ./'
-alias gs='npm start'
+alias gs='git status'
+alias gaa='git add -A'
+alias gcm='git commit -m'
+alias ns='npm start'
 alias ngrs='ngrok http 3000'
 
 # Front-end related stuff
 # -------------------------
 
+alias ws='open -a "WebStorm" .'
 alias hi='open -a "Visual Studio Code" .'
-alias hey='open -a "Zeplin" .'
 alias init-project='git clone https://github.com/nicolahorbach/init-project.git'
 
 function magic {
-echo 'Doing some magic mystery...'
-cd ~/Desktop/projects
-mkdir $1
-cd $1
-open -a "Visual Studio Code" .
-git clone https://github.com/nicolahorbach/init-project.git .
-rm -rf .git
-git init
-echo 'Magic has happened!'
+  echo 'Doing some magic mystery...'
+  cd ~/Desktop/projects
+  mkdir $1
+  cd $1
+  open -a "Visual Studio Code" .
+  git clone https://github.com/nicolahorbach/init-project.git .
+  rm -rf .git
+  git init
+  echo 'Magic has happened!'
 }
 
 # added by Anaconda3 5.0.1 installer
